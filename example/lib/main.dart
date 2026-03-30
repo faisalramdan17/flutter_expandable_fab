@@ -72,7 +72,7 @@ class _FirstPageState extends State<FirstPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CounterWidget(),
-      floatingActionButtonLocation: ExpandableFab.location,
+      floatingActionButtonLocation: ExpandableFab.float,
       floatingActionButton: ExpandableFab(
         key: _key,
         // margin: const EdgeInsets.all(100),

@@ -9,7 +9,7 @@ void main() {
     await tester.pumpWidget(MaterialApp(
       home: Scaffold(
         body: Container(),
-        floatingActionButtonLocation: ExpandableFab.location,
+        floatingActionButtonLocation: ExpandableFab.float,
         floatingActionButton: ExpandableFab(
           onOpen: () {
             callStack.add('onOpen');
@@ -53,7 +53,7 @@ void main() {
       return MaterialApp(
         home: Scaffold(
           body: Container(),
-          floatingActionButtonLocation: ExpandableFab.location,
+          floatingActionButtonLocation: ExpandableFab.float,
           floatingActionButton: ExpandableFab(
             pos: pos,
             children: [Container()],
@@ -99,7 +99,7 @@ void main() {
       return MaterialApp(
         home: Scaffold(
           body: Container(),
-          floatingActionButtonLocation: ExpandableFab.location,
+          floatingActionButtonLocation: ExpandableFab.float,
           floatingActionButton: ExpandableFab(
             pos: pos,
             initialOpen: true,
@@ -149,7 +149,7 @@ void main() {
     await tester.pumpWidget(MaterialApp(
       home: Scaffold(
         body: Container(),
-        floatingActionButtonLocation: ExpandableFab.location,
+        floatingActionButtonLocation: ExpandableFab.float,
         floatingActionButton: ExpandableFab(
           openButtonBuilder: RotateFloatingActionButtonBuilder(
             child: openButtonChild,
